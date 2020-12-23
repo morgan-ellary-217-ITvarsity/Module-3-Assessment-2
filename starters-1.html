@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <link rel="stylesheet" href="style.css">  <!--Links to style sheet-->
+           <link rel="stylesheet" href="fontAwesome/css/all.css">  <!--links to font awesome css style sheet-->
+          
+          <title>Home page</title>
+          
+           <script>
+              var price=79;
+              
+              function checkPrice()
+              {
+                  price=79;
+                   if(document.getElementById('Soda').checked)
+                      {
+                          price=price+18;
+                      }
+                  if(document.getElementById('Chips').checked)
+                      {
+                          price=price+25;
+                      }
+                  if(document.getElementById('Prawns').checked)
+                      {
+                          price=price+65;
+                      }
+                  if(document.getElementById('Rice').checked)
+                      {
+                          price=price+35;
+                      }
+                  if(document.getElementById('rolls').checked)
+                      {
+                          price=price+15;
+                      }
+                  
+                  document.getElementById('totalPrice').innerHTML = 'Your total Price comes to: R'+price.toString();
+                  
+              }
+              
+          </script>
+      </head>
+
+      <body>
+            <div id="header">
+                  <img src="images/logo6.png"/>
+            </div>
+            <!--Navigation Bar-->
+            <div class="navbar">
+                
+                 <a href="index.html">
+                <i class="fas fa-arrow-left"></i><!--displays chevron right symbol from font awesome--></a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Menu
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="main-menu.html">Main Menu</a>
+                        <a href="starters.html">Starters</a>
+                        <a href="specials.html">Specials</a>
+                        <a href="deserts.html">Desert</a>
+                        <a href="platters.html">Platters</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Us
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="book-table.html">Book a table</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Recipes
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                       <a href="recipe-1.html">Peppermint Tart</a>
+                        <a href="recipe-2.html">Brownie</a>
+                        <a href="recipe-3.html">Tiramisu</a>
+                    </div>
+                </div>
+            </div>
+        
+         <div id="main">
+                  <div id="content">
+                       <div id="info-box-full">
+                            
+                            <h3>Calamari Strips/Tubes</h3>
+                           
+                           <table>
+                               
+                               <tr>
+                                   <td style="width:600px"><img src="images/starter-1.jpg"></td>
+                                   <td>
+                                       <p>
+                                           Cost: R79
+                                        </p>
+                                       
+                                       <p>
+                                           Serving amount: For 1 Person
+                                        </p>
+                                       
+                                       <p>
+                                           Ingridents:Calamari tubes & squid heads 
+                                        </p>
+                                   </td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                       <h2>Description</h2>
+                                       <p>Calamari tubes & squid heads served in a creamy lemon butter sauce with warm Portuguese roll slices or savoury rice.</p>
+                                   </td>
+                               </tr>
+                           </table>
+             <form>      
+               <table>
+                <tr>
+                    <td><h3>Order list</h3><br/></td>
+                </tr>
+                   <tr>
+                        <td>
+                            <h2>Add-ons</h2><br>
+                            <label for="Chips">Chips: </label><input type="checkbox" id="Chips" onclick="checkPrice()"/><br/>
+                            <label for="Soda">Soda: </label><input type="checkbox" id="Soda" onclick="checkPrice()"/><br/>
+                            <label for="Prawns">Extra Prawns: </label><input type="checkbox" id="Prawns" onclick="checkPrice()"/><br/>
+                            <label for="Rice">Fried Rice: </label><input type="checkbox" id="Rice" onclick="checkPrice()"/><br/>
+                            <label for="rolls">Garlic rolls: </label><input type="checkbox" id="rolls" onclick="checkPrice()"/><br/>
+                            <label for="requests">Special requests : </label><input type="text" id="requests" onclick="checkPrice()"/> <br/>
+                        </td>
+                    </tr>
+                    
+                    
+                <tr>
+                    <td style="width:300px"><Label id="totalPrice">Your total Price comes to: R79 </Label><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="order-recieved.html"><input type="button" value="Order" /></a>
+                        <input type="reset" value="Reset" />
+                       
+                    </td>
+                </tr>
+                               
+            </table>
+       </form>
+     </div>
+          </div>
+            </div>
+          
+            <!--Footer Bar-->
+			<footer style="color:blue">&copy;The following website was created by ME Corps</footer>
+          
+      </body>
+</html> 

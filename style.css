@@ -1,0 +1,447 @@
+
+body{
+     padding    : 0;
+     margin     : 0;
+     font-family: Helvetica;
+     background-image  : url('images/background-3.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img
+{
+    width:500px;
+    height: 500px;
+}
+
+
+footer
+{
+   background-color: black;
+    text-align: center;
+    
+}
+
+td 
+{
+    width:200px; 
+} 
+
+
+/*=======Header section===========*/
+
+#header{
+      top     : 0;
+      left    : 0;
+      z-index : 500;
+      width   :100%;
+      height  :250px;
+      padding-top:10px;
+      background-image  : url('images/background-1.jpg');
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+#header img{
+      display: block;
+      margin : auto;
+      height : 100%;
+}
+
+/*=======Top tab section===========*/
+
+#tabs-top{
+      position: fixed;
+      top     : 80px;
+      left    : 0;
+      z-index : 500;
+      width   : 100%;
+      height  : 40px;
+      background-color: darkgreen;
+}
+
+#tabs-top a{
+      float   : left;
+      display : block;
+      width   : 25%;
+      height  :35px;
+      font-weight : 700;
+      color       : white;
+      text-align  : center;
+      text-decoration : none;
+      padding-top     : 12px;  
+}
+
+/*======Main-Home=====*/
+
+#main-home{
+       margin-top: 120px;
+}
+
+
+/*======main section =====*/
+#main{
+    margin-top: 119px;
+    background: url('images/abstract-blur-shopping-mall-department-store-interior-background_1417-5929.jpg');
+    background-repeat: repeat-y;
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+
+/*======Info Box=====*/
+a.info-box{
+      text-decoration : none;
+      background      : rgba(255 ,225, 255, .8);
+      width           : 90%;
+      height          : 90px;
+      display         : block;
+      margin          : auto;
+      margin-top      : 12px;
+      padding         : 1px; 
+}
+
+.info-box img{
+      height : 70px;
+      margin : 10px;
+      float  : left;
+}
+
+.info-box h3{
+      padding : 0;
+      margin-bottom :0;
+      width : 90%;
+      color : #572800;
+}
+
+.info-box p{
+      margin  : 0;
+      padding : 0;
+      width   : 90%;
+      color   : #131313;
+}
+
+.info-box img.right{
+      float      : right;
+      margin-top : 15px;
+      height     40px; 
+}
+
+/*=====info box styles section=====*/
+
+#info-box-full{
+      background-color : rgba(255, 255, 255, .8) ;
+      width   : 90%;
+      display : block;
+      margin  : auto;
+      margin-top : 12px;
+      padding    : 10px;
+}
+
+
+
+#info-box-full img{
+      width : 100%;
+}
+
+
+
+#info-box-full h3{
+      text-align : center;
+}
+
+/*=====contact page style section=====*/
+
+
+table.contactUs{
+    width:100%;
+}
+
+/*=====form page styles section=====*/
+input{
+      width: 30%;
+      height: 20px;
+}
+
+textarea{
+      width: 100%;
+      height :25px;
+      margin : 12px 0;
+      border : 1px solid #929292;
+}
+
+.button{
+      display : block;
+      background-color: forestgreen;
+      text-decoration : none;
+      text-align  : center;
+      color       : white;
+      font-size   : 16px;
+      font-weight : 600;
+      margin : 12px 0;
+      padding : 8px 0;
+}
+
+
+
+
+
+
+/*===== Navbar Section styling=====*/
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial;
+    width:100%;
+    height:50px;
+   
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*===== Animation styles ====*/
+
+.div1{
+        width:400px;
+	   height:400px;
+	   background-image:url("images/meal-special-1.png");
+        position:center;
+	   /* assigning animation name, duration, timing function */
+	   -webkit-animation:myAnimation 10s infinite;
+	}
+		@-webkit-keyframes myAnimation
+    {
+		50% {background-image:url("images/meal-special-2.png"); center:50px; center:50px;}
+		from {center:50px;}
+		to {center:50px;}
+    }
+
+.div2{
+        width:400px;
+	   height:400px;
+	   background-image:url("images/restaurant-1.jpg");
+	   position:center;
+	   /* assigning animation name, duration, timing function */
+        -webkit-animation:thyAnimation 10s infinite;
+	}
+    @-webkit-keyframes thyAnimation{
+	   50% {background-image:url("images/restaurant-2.jpg"); left:0px; top:0px;}
+	   from {left:50px;}
+	   to {left:200px;}
+    }
+    
+.div3{
+        width:400px;
+		height:400px;
+		background-image:url("images/platter-1.png");
+		position:center;
+		/* assigning animation name, duration, timing function */
+		-webkit-animation:thoAnimation 10s infinite;
+    }
+    @-webkit-keyframes thoAnimation{
+	    50% {background-image:url("images/platter-2.png"); left:0px; top:0px;}
+        from {left:50px;}
+		to {left:200px;}
+    }
+
+/*=====List=====*/
+
+.meals-list a{
+    text-decoration: none;
+}
+
+.meals-list-item{
+    
+    border: 5px solid  #1a1a1a;
+    margin:10px;
+    
+}
+
+.meals-list-item h1{
+    
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    padding-left: 10px;
+    
+}
+.meals-list-item p{
+    font-size: 15px;
+    font-style: italic;
+    color:#4d4d4d;
+    margin-top:-7px;
+    padding-left: 10px;
+}
+
+.meals-list-item i
+{
+    float: right;
+    color: #1a1a1a;
+     padding-right: 20px;
+}
+
+/*===== RESPONSIVE lAYOUT=====*/
+
+@media only screen and(min-width:300px)
+{
+   body
+    {
+        background-image  : url('images/background-3-port.jpg');
+    }
+
+    img 
+    {
+        width:200px;
+        height:200px;
+    }
+
+    td 
+    {
+        width:100px; 
+    } 
+    
+}
+
+@media only screen and(min-width:600px)
+{
+   body
+    {
+        background-image  : url('images/background-3-port.jpg');
+    }
+
+    img 
+    {
+        width:400px;
+        height:400px;
+    }
+
+    td 
+    {
+        width:150px; 
+    } 
+    
+    input
+    {
+      height: 15px;
+    }
+}
+
+@media only screen and(min-width:1500px)
+{
+   body
+    {
+        background-image  : url('images/background-3.jpg');
+    }
+
+    img 
+    {
+        width:450px;
+        height:450px;
+    }
+
+    td 
+    {
+        width:250px; 
+    } 
+    
+    input
+    {
+      height: 30px;
+    } 
+    
+}
+
+@media only screen and(min-width:1000px)
+{
+  body
+    {
+        background-image  : url('images/background-3.jpg');
+    }
+
+    img 
+    {
+        width:450px;
+        height:450px;
+    }
+
+    td 
+    {
+        width:250px; 
+    } 
+    
+    input
+    {
+      height: 30px;
+    } 
+}
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <link rel="stylesheet" href="style.css">  <!--Links to style sheet-->
+           <link rel="stylesheet" href="fontAwesome/css/all.css">  <!--links to font awesome css style sheet-->
+          
+          <title>Home page</title>
+          
+          <script>
+          </script>
+      </head>
+
+      <body>
+            <div id="header">
+                  <img src="images/logo6.png"/>
+            </div>
+            <!--Navigation Bar-->
+            <div class="navbar">
+                
+                <a href="index.html">
+                <i class="fas fa-arrow-left"></i><!--displays chevron right symbol from font awesome--></a>
+                    
+                <div class="dropdown">
+                    <button class="dropbtn">Menu
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="main-menu.html">Main Menu</a>
+                        <a href="starters.html">Starters</a>
+                        <a href="specials.html">Specials</a>
+                        <a href="deserts.html">Desert</a>
+                        <a href="platters.html">Platters</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Us
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="book-table.html">Book a table</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Recipes
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                       <a href="recipe-1.html">Peppermint Tart</a>
+                        <a href="recipe-2.html">Brownie</a>
+                        <a href="recipe-3.html">Tiramisu</a>
+                    </div>
+                </div>
+            </div>
+        
+        <div align="center">
+          
+           
+           <form>
+                <table>
+                <tr>
+                    <td><h3>Fill out the form below for us to contact you with your query</h3><br/></td>
+                </tr>
+                                
+                <tr>
+                    <td > <label>Name : </label><input type="text" id="firstname"/> <br/></td>
+                </tr>
+                            
+                <tr>
+                    <td> <label>Date : </label><input type="datetime-local" id="surname"/> <br/></td>
+                </tr>
+                               
+                <tr>
+                    <td> <label>Phone Number : </label><input type="text" id="phone"/> <br/></td>
+                </tr>
+                                
+                <tr>
+                    <td> <label>Email address : </label><input type="text" id="email"/> <br/></td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <label>Location : </label>
+                            <select name="Topic" id="topic">
+                                <option value="windowR">Window on the Right</option>
+                                <option value="WindowL">Window on the Left</option>
+                                <option value="Entrance">Near the entrance</option>
+                                <option value="Buffet">Near Buffet table</option>
+                            </select>
+                            <br/>
+                            <br/>
+                    </td>
+                </tr>
+                                
+                <tr>
+                    <td> <label>Specific requests : </label><input type="text" id="Comment"/> <br/></td>
+                </tr>
+                <tr>
+                    <td><a href="book-table-recieved.html"><input type="button" value="Book" /></a>
+                        <input type="reset" value="Reset" />
+                    </td>
+                </tr>
+                               
+            </table>
+        </form>
+         </div>
+          
+            <!--Footer Bar-->
+           <section class="sec2">
+			<footer style="color:blue">&copy;The following website was created by M Corp</footer>
+		  </section>
+      </body>
+</html> 
